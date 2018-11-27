@@ -1,4 +1,7 @@
-import java.util.*;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+import static java.time.LocalDateTime.now;
 
 public class Main {
     public static void main(String[] args){
@@ -8,6 +11,9 @@ public class Main {
 
         //invoke flipHeads
         flipHeads(3);
+
+        //invoke clock
+        clock();
     }
 
     // method takes in a string and an int and pluralizes that string
@@ -22,6 +28,9 @@ public class Main {
     }
 
 
+    // uses a random number generator to flip a coin.
+    // prints the result of the coin flip after each flip.
+    // prints the number of flips that it takes to get n head coin flips in a row
     public static void flipHeads(int n){
         // while numHeads is less than n, continue flipping
         // increment a numflips variable with each flip
@@ -67,8 +76,31 @@ public class Main {
             numFlips++;
         }
 
-        // after n heads in a row have been flipped, print a completion message. 
+        // after n heads in a row have been flipped, print a completion message.
         System.out.println("It took " + numFlips + " flips to get " + n + " heads in a row.");
+    }
 
+
+    // prints the time of the clock second by second using the LocalDateTime object
+    public static void clock(){
+        LocalDateTime currentTime = now();
+        boolean boolTest = true;
+
+        while(boolTest){
+            LocalDateTime timeCheck = now();
+
+            // if the previous current time is one second greater than the time
+            // that was just checked, print it
+            if(timeCheck.getSecond() == currentTime.getSecond()+1 || (currentTime.getSecond() == 59 && timeCheck.getSecond() == 0)){
+
+                String time = timeCheck.format(DateTimeFormatter.ofPattern("HH:mm:ss"));
+                    // attribution: Michelle Ferreirae provided formatting statement via Code Fellows Lab Docs
+
+                System.out.println(time);
+
+                // reset the current time to the time that was just checked
+                currentTime = timeCheck;
+            }
+        }
     }
 }
