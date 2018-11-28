@@ -30,6 +30,7 @@ public class Library {
         return false;
     }
 
+    // finds the average of a an array of ints
     public static double averageFinder(int[] arr){
 
         int sum = 0;
@@ -42,4 +43,17 @@ public class Library {
 
         return avg;
     }
+
+    //
+    public static int[] arrayOfArrays(int[][] arrOfArrs){
+
+        int lowIdx = 0;
+        for(int i = 1; i < arrOfArrs.length; i++){
+            if(averageFinder(arrOfArrs[i]) < averageFinder(arrOfArrs[lowIdx])){
+                lowIdx = i;
+            }
+        }
+        return arrOfArrs[lowIdx];
+    }
+
 }
