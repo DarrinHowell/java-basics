@@ -44,7 +44,7 @@ public class Library {
         return avg;
     }
 
-    //
+    // returns the int array with the smallest average within an array of arrays
     public static int[] arrayOfArrays(int[][] arrOfArrs){
 
         int lowIdx = 0;
