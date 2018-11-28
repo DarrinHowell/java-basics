@@ -11,4 +11,11 @@ public class LibraryTest {
         int[] resultArr = classUnderTest.roll(n);
         assertEquals(n, resultArr.length);
     }
+
+    @Test public void testContainsDuplicates() {
+        Library classUnderTest = new Library();
+        int[] testArr = {3, 4, 5, 6, 7, 8, 8};
+        boolean containsDuplicates = classUnderTest.containsDuplicates(testArr);
+        assertTrue("should return true", containsDuplicates);
+    }
 }

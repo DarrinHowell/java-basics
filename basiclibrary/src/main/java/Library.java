@@ -3,9 +3,9 @@
  */
 public class Library {
 
-
+    // uses a random number generator to simulate rolling a die.
+    // returns an array of n length with all of the rolls recorded inside.
     public static int[] roll(int n) {
-
         int[] resultsArr = new int[n];
 
         for(int i = 0; i < resultsArr.length; i++){
@@ -16,4 +16,17 @@ public class Library {
         return resultsArr;
     }
 
+    // returns true if arr has duplicates, false if there are no duplicates
+    public static boolean containsDuplicates(int[] arr) {
+
+        for(int i = 0; i < arr.length-1; i++){
+            for(int j = i + 1; j < arr.length; j++){
+                if(arr[i] == arr[j]){
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
 }
