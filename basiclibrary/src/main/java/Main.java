@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 // class that will run our library methods
 public class Main {
@@ -26,6 +28,24 @@ public class Main {
 
         Library.analyzeWeather(weeklyMonthTemperatures);
 
+        System.out.println("*************************");
+
+        System.out.println();
+
+        List<String> votes = new ArrayList<>();
+        votes.add("Bush");
+        votes.add("Bush");
+        votes.add("Bush");
+        votes.add("Gore");
+        votes.add("Gore");
+        votes.add("Shrub");
+        votes.add("Bush");
+        votes.add("Hedge");
+        votes.add("Bush");
+
+        String winner = Library.tally(votes);
+
+        System.out.println(winner + " received the most votes!");
 
     }
 }
