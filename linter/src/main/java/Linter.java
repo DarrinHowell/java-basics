@@ -18,8 +18,8 @@ public class Linter {
         try(BufferedReader fileReader = Files.newBufferedReader(FileSystems.getDefault().getPath("./resources/gates.js"))){
 
             String newLine = "";
-            while()
-
+            // while()
+            // read through the file
 
         } catch (IOException e){
             System.out.println("this is the error that occurred when trying to read our file: " + e);
