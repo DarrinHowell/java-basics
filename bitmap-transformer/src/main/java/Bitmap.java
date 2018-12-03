@@ -3,12 +3,18 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
+// bitmap class converts a file to a buffered image
+// bitmap instance methods manipulate pixel order and either
+// mirror or reverse the specified image over the either the horizontal or vertical axis
+// saves the bitmap to a new BMP file according to command line input.
 public class Bitmap {
     public BufferedImage img;
     public String savePath;
+    public String transform;
 
 
-    public Bitmap(String path, String savePath){
+    // constructs a new bitmap instance
+    public Bitmap(String path, String savePath, String transform){
 
         // create a file that Java can manipulate
         BufferedImage bitFile = null;
@@ -21,28 +27,29 @@ public class Bitmap {
         // set it as a field of Bitmap
         this.img = bitFile;
         this.savePath = savePath;
+        this.transform = transform;
+
+        this.transformAndSave();
 
     }
 
-    public void mirrorOverHorizontalMidline(){
+    // instance reflects pixels of bitmap image over vertical midline
+    public void mirrorOverVerticalMidline(){
 
         for(int i = 0; i < this.img.getHeight(); i++){
             for(int j = 0; j < this.img.getWidth() / 2; j++){
-                // grab val from the pixel at the end of the row, and store it in a var
+
                 int tempVal = this.img.getRGB(i, this.img.getWidth()-1-j);
 
-                // set the value at the end to be the value of the pixel that that we are currently at
-                // in the for loop
                 this.img.setRGB(i,this.img.getWidth()-1, this.img.getRGB(i,j));
 
-                // set the value at the beginning to be the parallel value at the end of this row in the pixel array
                 this.img.setRGB(i, j, tempVal);
             }
         }
     }
 
-
-    public void mirrorOverVerticalMidline(){
+    // instance reflects pixels of bitmap image over horizontal midline
+    public void mirrorOverHorizontalMidline(){
 
         for(int i = 0; i < this.img.getHeight(); i++){
             for(int j = 0; j < this.img.getWidth() / 2; j++){
@@ -56,7 +63,7 @@ public class Bitmap {
     }
 
 
-
+    // reverses image in horizontal direction
     public void flipHorizontally(){
 
             for(int i = 0; i < this.img.getHeight(); i++){
@@ -70,7 +77,7 @@ public class Bitmap {
             }
         }
 
-
+    // reverses image in vertical direction
     public void flipVertically(){
 
         for(int i = 0; i < this.img.getWidth(); i++){
@@ -98,5 +105,31 @@ public class Bitmap {
         }
 
 
+    }
+
+    // depending on the transform sent in via the command line, run the correct transform, then save
+    // if transform is legitimate
+    public void transformAndSave(){
+
+        if (this.transform.equals("mirrorOverHorizontalMidline")){
+            this.mirrorOverHorizontalMidline();
+            this.save();
+
+        } else if (this.transform.equals("mirrorOverVerticalMidline")) {
+            this.mirrorOverVerticalMidline();
+            this.save();
+
+        } else if (this.transform.equals("flipHorizontally")) {
+            this.flipHorizontally();
+            this.save();
+
+        } else if (this.transform.equals("flipVertically")) {
+            this.flipVertically();
+            this.save();
+
+            // if transform doesn't match any in our code bank, send back a println message
+        } else {
+            System.out.println("Sorry, unable to perform transform");
+        }
     }
 }
