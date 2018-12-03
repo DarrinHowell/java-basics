@@ -14,13 +14,19 @@ public class BitMapTransformer {
 
         // read file and create a new this field which contains our bitmap data
         String bitPath = "resources/test.BMP";
-        String savePath = "resources/testCopy3.BMP";
+        String savePath = "resources/flipVertically.BMP";
 
         // create new Bitmap instantiation upon which we will do some work
         // will eventually take in an output file path and a transform type
         Bitmap myBitmap = new Bitmap(bitPath, savePath);
 
-        // myBitmap.flipHorizontal();
+//         myBitmap.mirrorOverHorizontalMidline();
+
+//        myBitmap.mirrorOverVerticalMidline();
+
+//        myBitmap.flipHorizontally();
+
+        myBitmap.flipVertically();
 
         myBitmap.save();
 

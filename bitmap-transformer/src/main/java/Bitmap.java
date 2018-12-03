@@ -24,6 +24,68 @@ public class Bitmap {
 
     }
 
+    public void mirrorOverHorizontalMidline(){
+
+        for(int i = 0; i < this.img.getHeight(); i++){
+            for(int j = 0; j < this.img.getWidth() / 2; j++){
+                // grab val from the pixel at the end of the row, and store it in a var
+                int tempVal = this.img.getRGB(i, this.img.getWidth()-1-j);
+
+                // set the value at the end to be the value of the pixel that that we are currently at
+                // in the for loop
+                this.img.setRGB(i,this.img.getWidth()-1, this.img.getRGB(i,j));
+
+                // set the value at the beginning to be the parallel value at the end of this row in the pixel array
+                this.img.setRGB(i, j, tempVal);
+            }
+        }
+    }
+
+
+    public void mirrorOverVerticalMidline(){
+
+        for(int i = 0; i < this.img.getHeight(); i++){
+            for(int j = 0; j < this.img.getWidth() / 2; j++){
+                int tempVal = this.img.getRGB(this.img.getWidth()-1-j, i);
+
+                this.img.setRGB(this.img.getWidth()-1, i, this.img.getRGB(i,j));
+
+                this.img.setRGB(j, i, tempVal);
+            }
+        }
+    }
+
+
+
+    public void flipHorizontally(){
+
+            for(int i = 0; i < this.img.getHeight(); i++){
+                for(int j = 0; j < this.img.getWidth() / 2; j++){
+                    int tempVal = this.img.getRGB(this.img.getWidth()-1-j, i);
+
+                    this.img.setRGB(this.img.getWidth()-1-j, i, this.img.getRGB(j,i));
+
+                    this.img.setRGB(j, i, tempVal);
+                }
+            }
+        }
+
+
+    public void flipVertically(){
+
+        for(int i = 0; i < this.img.getWidth(); i++){
+            for(int j = 0; j < this.img.getHeight() / 2; j++){
+
+                int tempVal = this.img.getRGB(i, this.img.getHeight()-1-j);
+
+                this.img.setRGB(i, this.img.getHeight()-1-j, this.img.getRGB(i,j));
+
+                this.img.setRGB(i, j, tempVal);
+            }
+        }
+    }
+
+
     // instance method which writes this bitmap data to a new file
     // file location will be in the same directory as the file we received from disk
     public void save(){
