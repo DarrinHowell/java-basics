@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fef169d7-2f70-4954-9eef-3632da23df15" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BitMapTransformer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/flipHorizontally.BMP" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/flipHorizontally2.BMP" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/flipVertically.BMP" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mirror.BMP" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mirrorVertical4.BMP" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BitMapTransformer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Bitmap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bitmap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../linter/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -24,52 +31,82 @@
     <session id="-484683927">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="BMP" value="32" />
+          <entry key="bmp" value="2" />
           <entry key="java" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="Image" value="34" />
           <entry key="JAVA" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="17" />
-          <entry key="java" value="376" />
+          <entry key="java" value="5181" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="376" />
+          <entry key="JAVA" value="5181" />
           <entry key="PLAIN_TEXT" value="17" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/BitMapTransformer.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+            <state relative-caret-position="90">
+              <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Bitmap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+            <state relative-caret-position="1635">
+              <caret line="112" selection-start-line="112" selection-end-line="112" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/mirrorOverHorizMid3.BMP">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/flipVert2.BMP">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/flipVert.BMP">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/mirrorOverVertMid.BMP">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/mirrorOverHorizMid.BMP">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -87,7 +124,7 @@
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="/usr/local/Cellar/gradle/4.10.2/libexec" />
+        <entry key="$PROJECT_DIR$" value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.2-bin/cghg6c4gf4vkiutgsab8yrnwv/gradle-4.10.2" />
       </map>
     </option>
     <option name="myGradleVersions">
@@ -292,7 +329,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6174394836000" />
+        <entry key="$PROJECT_DIR$" value="6175023787000" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/build.gradle" value="474392886" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="307973072" />
@@ -415,16 +452,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/App.java" />
         <option value="$PROJECT_DIR$/src/main/java/BitMapTransformer.java" />
         <option value="$PROJECT_DIR$/src/main/java/Bitmap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/App.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="715" />
+    <option name="height" value="710" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -434,7 +471,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -442,6 +478,11 @@
             <path>
               <item name="bitmap-transformer" type="b2602c69:ProjectViewProjectNode" />
               <item name="bitmap-transformer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="bitmap-transformer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bitmap-transformer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bitmap-transformer" type="b2602c69:ProjectViewProjectNode" />
@@ -465,10 +506,11 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543608587958" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543820171256" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
@@ -482,6 +524,20 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="App" />
+      <module name="bitmap-transformer_main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.BitMapTransformer" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -497,56 +553,161 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="710" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="710" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Capture Tool" />
-      <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2536349" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Build" visible="true" weight="0.32847896" />
-      <window_info anchor="bottom" id="sbt-shell-toolwindow" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32847896" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32847896" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="sbt" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="right" id="Gradle" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32847896" />
+      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="sbt" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="Gradle" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2536349" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Learn" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32847896" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32847896" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32847896" />
+      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="sbt" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="Gradle" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/BitMapTransformer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/bitCopy.BMP" />
+    <entry file="file://$PROJECT_DIR$/resources/bitCopy2.BMP">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/bitCopy.BMP">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/Dragon.bmp" />
+    <entry file="file://$PROJECT_DIR$/resources/testCopy2.BMP">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/horizonFlip.BMP">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/mirrorVertical.BMP">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/mirrorVertical2.BMP">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/mirrorVertical3.BMP">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/flipHorizontally.BMP">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/test.BMP">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/mirror.BMP">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/mirrorVertical4.BMP">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/flipVertically.BMP">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/flipHorizontally2.BMP">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/mirrorOverHorizon.BMP">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/mirrorOverVert.BMP">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/flipHorizon.BMP">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/flipHorizon5.BMP">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/mirrorHorizon.BMP">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/mirrorOverVertMid.BMP">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/mirrorOverHorizMid.BMP">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/flipVert.BMP">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/flipVert2.BMP">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/mirrorOverHorizMid3.BMP">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Bitmap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+        <state relative-caret-position="1635">
+          <caret line="112" selection-start-line="112" selection-end-line="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
         </state>
       </provider>
     </entry>
