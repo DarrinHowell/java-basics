@@ -31,4 +31,30 @@ public class RestaurantTest {
         int testIntFalse = 6;
         assertFalse("numStars should not be the same as testIntFalse", newReview.toString().equals(Integer.toString(testIntFalse)));
     }
+
+
+    @Test public void testAddReview() {
+
+        /////////// -- Test without adding
+
+        Restaurant newRestaurant = new Restaurant("Seoul Food", 5,"$$");
+        assertTrue("numStars should equal five after instantiation", 5 == newRestaurant.getStars());
+
+
+        /////////// -- 1st Review test
+
+        Review testReview = new Review("So, so good.", "D$", 8);
+        newRestaurant.addReview(testReview);
+        assertTrue("numStars should avg to 4 after first review", 6 == newRestaurant.getStars());
+
+
+        /////////// -- 2nd Review test
+
+        Review testReview2 = new Review("Don't get me started.", "D$", 18);
+        newRestaurant.addReview(testReview2);
+
+        assertTrue("numStars should avg to 4 after first review", 10 == newRestaurant.getStars());
+
+
+    }
 }
