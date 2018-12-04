@@ -5,8 +5,17 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class RestaurantTest {
-    @Test public void testSomeRestaurantMethod() {
-        Restaurant classUnderTest = new Restaurant();
-//        assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
+
+
+    @Test public void testToStringWithRestaurant() {
+
+        Restaurant newRestaurant = new Restaurant("Banana Leaf", 5, "$");
+        assertTrue("numStars should be the same as Integer.toString()", newRestaurant.toString().equals(Integer.toString(newRestaurant.getStars())));
+
+        int testInt = 5;
+        assertTrue("numStars should be the same as testInt", newRestaurant.toString().equals(Integer.toString(testInt)));
+
+        int testIntFalse = 6;
+        assertFalse("numStars should not be the same as testIntFalse", newRestaurant.toString().equals(Integer.toString(testIntFalse)));
     }
 }
