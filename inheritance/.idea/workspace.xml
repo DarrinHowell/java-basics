@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b6eaa58-05c3-47c0-91fe-e378936222b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Restaurant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestaurantRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestaurantRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RestaurantTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RestaurantTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -42,12 +40,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="24" />
-          <entry key="java" value="2928" />
+          <entry key="java" value="3097" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2928" />
+          <entry key="JAVA" value="3097" />
           <entry key="PLAIN_TEXT" value="24" />
         </counts>
       </usages-collector>
@@ -58,11 +56,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Restaurant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="11" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="11" />
+            <state relative-caret-position="319">
+              <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
               <folding>
-                <element signature="e#545#546#0" expanded="true" />
-                <element signature="e#564#565#0" expanded="true" />
+                <element signature="e#751#752#0" expanded="true" />
+                <element signature="e#787#788#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -95,8 +93,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/RestaurantTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="37" column="42" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
+            <state relative-caret-position="143">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
             </state>
           </provider>
         </entry>
@@ -417,8 +415,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Review.java" />
         <option value="$PROJECT_DIR$/src/main/java/RestaurantRunner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Restaurant.java" />
         <option value="$PROJECT_DIR$/src/test/java/RestaurantTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Restaurant.java" />
       </list>
     </option>
   </component>
@@ -481,7 +479,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543955995407" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543956609723" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
@@ -496,7 +494,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RestaurantRunner">
+  <component name="RunManager" selected="JUnit.RestaurantTest.testAddReview">
     <configuration name="RestaurantRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="RestaurantRunner" />
       <module name="inheritance_main" />
@@ -553,8 +551,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RestaurantRunner" />
         <item itemvalue="JUnit.RestaurantTest.testAddReview" />
+        <item itemvalue="Application.RestaurantRunner" />
         <item itemvalue="JUnit.RestaurantTest.testToStringWithReview" />
         <item itemvalue="JUnit.RestaurantTest.testToStringWithRestaurant" />
         <item itemvalue="JUnit.RestaurantTest.testSomeRestaurantMethod" />
@@ -575,9 +573,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RestaurantTest_testSomeRestaurantMethod - 2018.12.04 at 10h 11m 14s.xml">
-      <configuration name="RestaurantTest.testSomeRestaurantMethod" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RestaurantTest_testSomeRestaurantMethod - 2018.12.04 at 10h 13m 24s.xml">
       <configuration name="RestaurantTest.testSomeRestaurantMethod" configurationId="JUnit" />
     </history-entry>
@@ -597,6 +592,15 @@
       <configuration name="RestaurantTest.testToStringWithReview" configurationId="JUnit" />
     </history-entry>
     <history-entry file="RestaurantTest_testAddReview - 2018.12.04 at 12h 36m 18s.xml">
+      <configuration name="RestaurantTest.testAddReview" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestaurantTest_testAddReview - 2018.12.04 at 12h 44m 29s.xml">
+      <configuration name="RestaurantTest.testAddReview" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestaurantTest_testAddReview - 2018.12.04 at 12h 47m 33s.xml">
+      <configuration name="RestaurantTest.testAddReview" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestaurantTest_testAddReview - 2018.12.04 at 12h 49m 57s.xml">
       <configuration name="RestaurantTest.testAddReview" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -654,17 +658,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Restaurant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="11" />
-          <folding>
-            <element signature="e#545#546#0" expanded="true" />
-            <element signature="e#564#565#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/RestaurantRunner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -672,10 +665,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Restaurant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+          <folding>
+            <element signature="e#751#752#0" expanded="true" />
+            <element signature="e#787#788#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/RestaurantTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="37" column="42" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
+        <state relative-caret-position="143">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
     </entry>

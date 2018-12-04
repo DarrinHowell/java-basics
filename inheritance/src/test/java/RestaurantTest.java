@@ -38,14 +38,16 @@ public class RestaurantTest {
         /////////// -- Test without adding
 
         Restaurant newRestaurant = new Restaurant("Seoul Food", 5,"$$");
-        assertTrue("numStars should equal five after instantiation", 5 == newRestaurant.getStars());
+        assertTrue("numStars avg should equal five after instantiation", 5 == newRestaurant.getStars());
+
 
 
         /////////// -- 1st Review test
 
         Review testReview = new Review("So, so good.", "D$", 8);
         newRestaurant.addReview(testReview);
-        assertTrue("numStars should avg to 4 after first review", 6 == newRestaurant.getStars());
+        assertTrue("numStars avg should hit 6 after first review", 6 == newRestaurant.getStars());
+
 
 
         /////////// -- 2nd Review test
@@ -53,7 +55,16 @@ public class RestaurantTest {
         Review testReview2 = new Review("Don't get me started.", "D$", 18);
         newRestaurant.addReview(testReview2);
 
-        assertTrue("numStars should avg to 4 after first review", 10 == newRestaurant.getStars());
+        assertTrue("numStars avg should rise to 10 after review", 10 == newRestaurant.getStars());
+
+
+
+        /////////// -- Duplicate Review test
+
+        // add the same review again
+        newRestaurant.addReview(testReview2);
+
+        assertTrue("numStars avg should stay at 10 after adding duplicate review", 10 == newRestaurant.getStars());
 
 
     }

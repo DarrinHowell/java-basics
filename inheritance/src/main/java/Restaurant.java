@@ -7,11 +7,11 @@ import java.util.*;
 public class Restaurant {
     private String name;
     private int numStars; // each restaurant starts with a star rating given by a client
-        // (aka they all go through soft openings)
+    // (aka they all go through soft openings)
     private String priceCategory;
     private List<Review> reviewList;
 
-    public Restaurant(String name, int numStars,String priceCategory){
+    public Restaurant(String name, int numStars, String priceCategory) {
         this.name = name;
         this.numStars = numStars;
         this.priceCategory = priceCategory;
@@ -20,14 +20,14 @@ public class Restaurant {
     }
 
 
-    public String toString(){
+    public String toString() {
         String starsStringified = Integer.toString(this.numStars);
 
         return starsStringified;
     }
 
 
-    public int getStars(){
+    public int getStars() {
         return this.numStars;
     }
 
@@ -35,16 +35,21 @@ public class Restaurant {
     // method adds a review to the restaurant field reviewList and then finds the average
     // stars (the restaurant hits the market with an initial rating after its soft opening --> aka
     // set by the client when the object is instantiated.
-    public void addReview(Review newReview){
-        this.reviewList.add(newReview);
+    public void addReview(Review newReview) {
 
-        int sumStars = 0;
-        for (Review review : this.reviewList) {
-            sumStars += review.getStars();
+        if (!this.reviewList.contains(newReview)) {
+            this.reviewList.add(newReview);
+
+            int sumStars = 0;
+            for (Review review : this.reviewList) {
+                sumStars += review.getStars();
+            }
+
+            int avg = (sumStars + this.numStars) / (this.reviewList.size() + 1);
+            this.numStars = avg;
+
         }
 
-        int avg = (sumStars + this.numStars) / (this.reviewList.size() + 1);
-        this.numStars = avg;
     }
 
 }
