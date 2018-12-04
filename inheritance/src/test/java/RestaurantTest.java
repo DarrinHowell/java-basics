@@ -18,4 +18,17 @@ public class RestaurantTest {
         int testIntFalse = 6;
         assertFalse("numStars should not be the same as testIntFalse", newRestaurant.toString().equals(Integer.toString(testIntFalse)));
     }
+
+
+    @Test public void testToStringWithReview() {
+
+        Review newReview= new Review("Le'gooooo!", "Me", 5);
+        assertTrue("numStars should be the same as Integer.toString()", newReview.toString().equals(Integer.toString(newReview.getStars())));
+
+        int testInt = 5;
+        assertTrue("numStars should be the same as testInt", newReview.toString().equals(Integer.toString(testInt)));
+
+        int testIntFalse = 6;
+        assertFalse("numStars should not be the same as testIntFalse", newReview.toString().equals(Integer.toString(testIntFalse)));
+    }
 }
