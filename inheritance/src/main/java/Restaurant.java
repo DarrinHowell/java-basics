@@ -6,14 +6,14 @@ import java.util.*;
  */
 public class Restaurant {
     private String name;
-    private int numStars; // each restaurant starts with a star rating given by a client
+    private int avgNumStars; // each restaurant starts with a star rating given by a client
     // (aka they all go through soft openings)
     private String priceCategory;
     private List<Review> reviewList;
 
     public Restaurant(String name, int numStars, String priceCategory) {
         this.name = name;
-        this.numStars = numStars;
+        this.avgNumStars = numStars;
         this.priceCategory = priceCategory;
         this.reviewList = new ArrayList<>();
 
@@ -21,14 +21,14 @@ public class Restaurant {
 
 
     public String toString() {
-        String starsStringified = Integer.toString(this.numStars);
+        String starsStringified = Integer.toString(this.avgNumStars);
 
         return starsStringified;
     }
 
 
     public int getStars() {
-        return this.numStars;
+        return this.avgNumStars;
     }
 
 
@@ -45,8 +45,8 @@ public class Restaurant {
                 sumStars += review.getStars();
             }
 
-            int avg = (sumStars + this.numStars) / (this.reviewList.size() + 1);
-            this.numStars = avg;
+            int newAvg = (sumStars + this.avgNumStars) / (this.reviewList.size() + 1);
+            this.avgNumStars = newAvg;
 
         }
 
