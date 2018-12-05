@@ -68,4 +68,29 @@ public class RestaurantTest {
 
 
     }
+
+
+    @Test public void testToStringWithShopt() {
+
+        Shop testShop = new Shop("nordstroms", "high-end retail", "$$$");
+        String expectedString1 = "Shop nordstroms has $$$ price rating.";
+
+        assertTrue("the shop.toString method should produce the same output as the test method",
+                testShop.toString().equals(expectedString1));
+
+        Shop testShop2 = new Shop("foot-locker", "shoe store", "$$");
+        String expectedString2 = "Shop foot-locker has $$ price rating.";
+
+        assertTrue("the shop.toString method should produce the same output as the test method",
+                testShop2.toString().equals(expectedString2));
+
+
+
+        Shop testShop3 = new Shop("REI", "outdoor retail", "$$$");
+        String expectedString3 = "Shop REI has $$$ price rating.";
+
+        assertTrue("the shop.toString method should produce the same output as the test method",
+                testShop3.toString().equals(expectedString3));
+
+    }
 }
