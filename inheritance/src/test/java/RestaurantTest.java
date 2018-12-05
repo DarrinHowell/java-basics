@@ -70,7 +70,7 @@ public class RestaurantTest {
     }
 
 
-    @Test public void testToStringWithShopt() {
+    @Test public void testToStringWithShop() {
 
         Shop testShop = new Shop("nordstroms", "high-end retail");
         String expectedString1 = "Shop nordstroms has 0.0 dollar signs.";
@@ -93,4 +93,105 @@ public class RestaurantTest {
                 testShop3.toString().equals(expectedString3));
 
     }
+
+    @Test public void testAddReviewWithShop() {
+
+        Shop testShop2 = new Shop("foot-locker", "shoe store");
+
+        Review shopReview1 = new Review("amazing quality", "D$", 1.0);
+        Review shopReview2 = new Review("amazing quality", "D$", 8.0);
+        Review shopReview3 = new Review("amazing quality", "D$", 10.0);
+        Review shopReview4 = new Review("amazing quality", "D$", 5.0);
+
+        testShop2.addReview(shopReview1);
+        testShop2.addReview(shopReview2);
+        testShop2.addReview(shopReview3);
+        testShop2.addReview(shopReview4);
+
+        assertEquals(6.0, testShop2.getReview(), 0.0);
+
+
+        ////// -- after adding a duplicate review, the avg review should be the same.
+
+        testShop2.addReview(shopReview4);
+        assertEquals(6.0, testShop2.getReview(), 0.0);
+
+
+        ////// -- after adding a new review, the avg review should change.
+
+
+        Review shopReview5 = new Review("amazing quality", "D$", 11.0);
+        testShop2.addReview(shopReview5);
+
+        assertEquals(7.0, testShop2.getReview(), 0.0);
+
+
+
+    }
+
+    @Test public void testTheaters() {
+
+        Theater newCineplex = new Theater("AMC 16");
+
+        newCineplex.addMovie("Venom Awakens");
+        newCineplex.addMovie("Spiderman Returns");
+
+        newCineplex.addMovie("Infinity Wars");
+        newCineplex.addMovie("Batman: Arctic Storm");
+        newCineplex.addMovie("The Death of Superman");
+
+        assertTrue("The first element in the list should be Venom Awakens",
+                newCineplex.getMoviesList().get(0) == "Venom Awakens");
+
+        assertTrue("The middle element in the list should be Infinity Wars",
+                newCineplex.getMoviesList().get(2) == "Infinity Wars");
+
+
+        int sizeBeforeAddingDuplicate = newCineplex.getMoviesList().size();
+        newCineplex.addMovie("Venom Awakens");
+        int sizeAfterAddingDuplicate = newCineplex.getMoviesList().size();
+        assertTrue("The list size should be the same before and after adding a duplicate",
+                sizeBeforeAddingDuplicate == sizeAfterAddingDuplicate);
+
+
+        int sizeOfMoviesList = newCineplex.getMoviesList().size();
+        newCineplex.removeMovie("Infinity Wars");
+        int sizeOfMoviesListAfterRemoval = newCineplex.getMoviesList().size();
+        assertEquals(sizeOfMoviesList - 1, sizeOfMoviesListAfterRemoval);
+
+
+        String expectedString = "Theater AMC 16 has 4 movies playing.";
+        String actualString = newCineplex.toString();
+        assertTrue("To String should match expected String", actualString.equals(expectedString));
+
+
+        Theater newCineplex2 = new Theater("AMC 16");
+        Review testReview = new Review("So, so good.", "D$", 8);
+        newCineplex2.addReview(testReview);
+        int expectedAvg = 8;
+        assertEquals(expectedAvg, newCineplex2.getAvgStars());
+
+        Review testReview2 = new Review("So, so good.", "D$", 16);
+        newCineplex2.addReview(testReview2);
+
+        //avg should stay the same
+        int newExpectedAvg = 12;
+        assertEquals(newExpectedAvg, newCineplex2.getAvgStars());
+
+
+        Review theaterReview = new Review("Simply stunning", "D$", 10,
+                "Kung Fu Panda");
+
+        String expectedTitle = "Kung Fu Panda";
+
+        assertTrue("Expected title should be the same as the title put into the constructor",
+                theaterReview.getMovieSeen().equals(expectedTitle));
+
+
+        // test to see if avg stars for the theater changes after adding the new type of review.
+
+
+    }
+
+
 }
